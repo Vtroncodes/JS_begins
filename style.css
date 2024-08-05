@@ -1,0 +1,397 @@
+body {
+  background-color: #fff;
+  color: inherit;
+  line-height: inherit;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: Trebuchet, Helvetica, Arial, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+}
+
+/******************************** header section ********************************/
+
+header {
+  padding-bottom: 50px;
+  background-color: initial;
+}
+
+.header_fix {
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: box-shadow 0.5s cubic-bezier(0.3, 0.01, 0, 1);
+  width: 100%;
+  /* z-index: 900; */
+}
+
+.header_section {
+  background-image: url(../images/full-illustration-desktop-full\ -width.jpg);
+  background-position: 0 -1.3125rem;
+  height: 100vh !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  overflow: visible;
+  position: fixed;
+  width: 100vw;
+  /* z-index: 0; */
+  display: flex;
+}
+/********************************* Navigation bar ********************************/
+.nav_bar {
+  align-items: center;
+  /* grid-gap: 1rem; */
+  width: 100%;
+  height: 60px;
+  border-radius: 61px;
+  background-color: #fff;
+  padding: 6px;
+  margin-top: 40px;
+  margin-right: 35px;
+  margin-left: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/******************************** navbar left section ********************************/
+
+.nav_bar_left {
+  position: absolute;
+  left: 80px;
+  display: flex !important;
+}
+
+.search_btn,
+.dropdown_btn,
+.pricing_btn {
+  background-color: #fff;
+  border: none;
+  color: black;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.search_wrap :hover .search_btn,
+.dropdown_wrap :hover .dropdown_btn,
+.pricing_btn_wrap :hover .pricing_btn,
+.search_btn:hover {
+  background-color: #f1f1f1;
+}
+
+/******************************* dropdpwn *******************************/
+.dropbtn {
+  background-color: #fff;
+  border: none;
+  color: black;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.down_arrow {
+  transition: all 0.5s ease-in-out;
+}
+
+.header_dropdown :hover .down_arrow {
+  transform: scale(1.1);
+  transform: rotate(180deg);
+}
+
+.header_dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  /* z-index: 1; */
+}
+
+.grid_wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 10px;
+}
+.grid_wrap .grid_col {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  /* z-index: 100; */
+}
+
+.grid_col ul {
+  display: inline;
+  margin: 2px;
+}
+
+.grid_col ul li {
+  text-decoration: none;
+  color: black;
+  margin: 4px;
+  padding: 6px;
+}
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+
+.header_dropdown:hover .dropbtn {
+  background-color: #f1f1f1;
+}
+
+.header_dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.grid_div {
+  margin-left: 20px;
+  padding: 10px;
+}
+
+/******************************** navbar center section ********************************/
+
+.nav_bar_center {
+  position: absolute;
+  left: 50%;
+}
+
+/******************************** navbar right section ********************************/
+
+.nav_bar_right {
+  position: absolute;
+  right: 52px;
+  display: flex;
+  align-items: center;
+}
+.gofundme_btn {
+  border: 1px solid black !important;
+  padding: 8px;
+  margin-left: 2px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* *****************Banner section*******************  */
+.banner_section {
+  height: 37.875rem;
+  margin-bottom: 0 !important;
+  padding-top: 3.75rem;
+  /* position: sticky; */
+  top: 0;
+  width: 100vw;
+  /* z-index: -1; */
+}
+.green_text {
+  color: #18412d;
+}
+
+.banner_container {
+  left: 40%;
+  margin: 0;
+  max-width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  position: fixed;
+  text-align: center;
+  top: 13.75rem;
+  /* transform: translate(-50%, -50%); */
+  width: 100%;
+}
+.banner_h4 {
+  /* font-size: clamp(1rem,1rem + .25*(100vw - 23.4375rem)/66.5625,1.25rem); */
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  max-width: 18.75rem;
+}
+
+.banner_btn_wrap {
+  position: fixed;
+  text-align: center;
+  left: 48%;
+}
+
+.banner_h1 {
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+
+.start_gofund_btn {
+  background-color: #fff;
+  border: none;
+  color: #18412d;
+  padding: 18px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+  top: 34px;
+}
+
+/* *****************Home page section*******************  */
+.home_page_section {
+  height: 100vh;
+}
+.home_page_container {
+  background-color: #fff;
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+  padding-top: 2.5rem;
+  position: relative;
+  /* z-index: 1; */
+}
+
+.home_page_start_heading {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1.5rem 1rem;
+}
+.close_to_target_dropdown {
+  margin: 4px;
+}
+.close_to_target_list_parent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.close_to_target_content {
+  color: #252525;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.close_to_target_subtitle {
+  color: #6f6f6f;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+
+.close_to_target_dropdown_content a {
+  display: flex;
+}
+
+.coolections_card_container .card {
+  border: none;
+}
+
+progress {
+  appearance: none;
+  background-color: #f4f2ec;
+  border: none;
+  border-radius: 0.125rem;
+  color: #02a95c;
+  display: block;
+  height: 0.25rem;
+  width: 100%;
+}
+
+.card_img {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+.card_img :hover {
+  transform: scale(1.2);
+}
+
+.donation_count {
+  -webkit-backdrop-filter: blur(105px);
+  align-items: center;
+  backdrop-filter: blur(2px);
+  background-color: #00000080;
+  border-radius: 0.75rem;
+  bottom: 8.75rem;
+  color: #fff;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+  height: 1.5rem;
+  left: 0.75rem;
+  padding: 0 0.5rem;
+  position: absolute;
+}
+
+.slider_btn_wrap {
+  position: absolute;
+  right: 6%;
+  bottom: 84%;
+}
+
+.slider_contol {
+  height: 2.2rem;
+  width: 2.2rem;
+  background-color: #000;
+  color: #252;
+  margin: 10px !important;
+  border: 1px solid #c0bdb8;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.carousel-control-prev {
+  position: absolute;
+  left: 90%;
+}
+
+.carousel-control-next {
+  position: absolute;
+  right: 2%;
+}
+
+/* **************featured topics section ***************/
+.featured_topics_section {
+  height: 100vh;
+  background-color: #fff;
+  background-color: #fff;
+  border-top-left-radius: 1.875rem;
+  border-top-right-radius: 1.875rem;
+  padding-top: 2.5rem;
+  position: relative;
+}
+
+.donate_now_link {
+  color: #000;
+  text-decoration: none;
+}
